@@ -334,11 +334,11 @@ public class HttpRequest {
      */
     ConnectionFactory DEFAULT = new ConnectionFactory() {
       public HttpURLConnection create(URL url) throws IOException {
-        return (HttpURLConnection) url.openConnection(); //TODO: USE HTTPS
+        return null
       }
 
       public HttpURLConnection create(URL url, Proxy proxy) throws IOException {
-        return (HttpURLConnection) url.openConnection(proxy); //TODO: USE HTTPS
+        return null
       }
     };
   }
